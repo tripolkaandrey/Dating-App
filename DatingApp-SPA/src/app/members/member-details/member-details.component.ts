@@ -18,7 +18,7 @@ export class MemberDetailsComponent implements OnInit {
   constructor(private userService: UserService, private alertify: AlertifyService, 
               private route: ActivatedRoute) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.route.data.subscribe(data => {
       this.user = data['user'];
     });
@@ -37,7 +37,7 @@ export class MemberDetailsComponent implements OnInit {
     console.log(this.galleryImages);
   }
 
-  getImages() {
+  getImages(): NgxGalleryImage[] {
     const imageUrls = [];
     for (const photo of this.user.photos) {
       imageUrls.push({
