@@ -13,6 +13,7 @@ namespace DatingApp.API.Dtos
         [Required]
         public string Gender { get; set; }
         [Required]
+        [StringLength(10,MinimumLength = 4, ErrorMessage = "You must specify known as between 4 and 10 characters")]
         public string KnownAs { get; set; }
         [Required]
         public DateTime Birthdate { get; set; }

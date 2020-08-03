@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.fb.group({
       gender: ['male'],
       username: ['', Validators.required],
-      knownAs: ['', Validators.required],
+      knownAs: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(10)]],
       birthDate: [null, Validators.required],
       city: ['', Validators.required],
       country: ['', Validators.required],
