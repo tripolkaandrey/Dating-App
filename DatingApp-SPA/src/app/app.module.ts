@@ -11,6 +11,7 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { TimeagoModule } from 'ngx-timeago';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 
 import { AppComponent } from './app.component';
@@ -73,6 +74,7 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       RouterModule.forRoot(appRoutes),
       TabsModule.forRoot(),
       TimeagoModule.forRoot(),
+      PaginationModule.forRoot(),
       NgxGalleryModule,
       FileUploadModule,
       JwtModule.forRoot({
