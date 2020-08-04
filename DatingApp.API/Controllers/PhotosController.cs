@@ -159,7 +159,7 @@ namespace DatingApp.API.Controllers
             if (await _repo.SaveAll())
                 return Ok();
 
-            return BadRequest("Failed to delete photo");
+            return BadRequest("Failed to delete the photo");
         }
     }
 }

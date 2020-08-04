@@ -18,7 +18,7 @@ export class AuthGuard implements CanActivate {
       return true;
     }
     this.alertify.error('You shall not pass!!!');
-    this.router.navigate(['/home']);
+    this.router.navigate(['/']);
 
   }
 }
